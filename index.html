@@ -1,0 +1,100 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phông chữ và màu nền */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hiệu ứng cho phần đầu trang */
+header {
+    background: linear-gradient(45deg, #00bcd4, #8e24aa);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+/* Tiêu đề trang */
+h1 {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 2.5rem;
+}
+
+/* Thanh điều hướng (navbar) */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    background-color: #ff4081;
+}
+
+/* Phần nội dung chính */
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateX(-5deg);
+}
+
+main h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Phần footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    border-top: 3px solid #00bcd4;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Hiệu ứng 3D cho các phần tử */
+a, h1, h2, p {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a:hover, h1:hover, h2:hover, p:hover {
+    transform: translateZ(15px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
